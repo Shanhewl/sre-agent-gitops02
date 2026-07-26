@@ -20,7 +20,7 @@ spec:
     spec:
       # 新增：强制 Pod 调度到有 PV 的节点
       nodeSelector:
-        kubernetes.io/hostname: k8s-node2   # 必须和 PV 的 nodeAffinity 一致
+        kubernetes.io/hostname: k8s-node3   # 必须和 PV 的 nodeAffinity 一致
       # 新增：定义卷
       volumes:
         - name: ollama-data
